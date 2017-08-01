@@ -1,0 +1,73 @@
+body {
+    color: black;
+    font-size: 20px;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 150px;
+    background-color: #4078c0;
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+header h1 {
+    flex: 1;
+    font-size: 2em;
+    letter-spacing: 1px;
+    /*line-height: 150px;*/
+    padding: 20px;
+    text-shadow: 0 0 5px #6cc644;
+}
+
+header img {
+    flex: 0 0 100px;
+    margin: 25px;
+    /*line-height: 150px;*/
+}
+
+.container {
+    width: 100%;
+    background-color: #6e5494;
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 320px;
+    margin: 0 auto;
+
+}
+p {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+    border: 1px solid #bd2c00;
+    text-shadow: 0 0 1px #6cc644;
+    font-size: 1.2em;
+}
+
+/*
+.swatch-github-green {
+	background-color:#6cc644;
+}
+.swatch-github-red {
+	background-color:#bd2c00;
+}
+.swatch-github-orange {
+	background-color:#c9510c;
+}
+.swatch-github-purple {
+    background-color:#6e5494;
+    */
+
+@media screen and (min-width: 537px) {
+
+    header {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
