@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 1000px;
+    background-color: #aaa;
+}
