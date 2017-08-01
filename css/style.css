@@ -42,6 +42,11 @@ header p {
     margin: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .card {
     flex: 1 1 200px;
     background-color: aquamarine;
