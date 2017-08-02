@@ -12,6 +12,7 @@ body {
     max-width: 1200px;
     background-color: #aaa;
     border-radius: 10px;
+    /*height: 100vh;*/
 }
 header {
     box-sizing: border-box;
@@ -42,9 +43,15 @@ header p {
     margin: 20px;
 }
 
-a {
+.container a {
+    display: flex;
+    flex: 1 1 200px;
     text-decoration: none;
     color: black;
+    align-content: stretch;
+    background-color: #333;
+    margin: 2px;
+    border-radius: 5px;
 }
 
 .card {
@@ -56,6 +63,7 @@ a {
     border: 1px solid aqua;
     border-radius: 5px;
     box-shadow: 1px 1px 5px aquamarine;
+    align-content: stretch;
 }
 
 .card h1 {
