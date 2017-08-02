@@ -67,7 +67,43 @@ p {
     text-shadow: 0 0 1px #6cc644;
     font-size: 1.2em;
 }
+.card {
+    flex:1 0 320px;
+    border: 1px solid #bd2c00;
+    padding: 20px;
+}
+.card h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.card ol {
+    list-style-type: decimal;
+    padding: 20px;
+}
+.card ul {
+    list-style-type: square;
+    padding: 20px;
+}
+.card li {
+    line-height: 110%;
+}
 
+strong {
+    font-weight: 700;
+}
+
+code {
+    font-family: sans;
+    font-size: 1.05em;
+    background-color: white;
+    color: #6e5494;
+    font-weight: 600;
+    padding: 0 5px;
+}
+
+em {
+    font-style: italic;
+}
 
 @media screen and (min-width: 537px) {
 
@@ -77,5 +113,9 @@ p {
 
     .container {
         width: 90%;
+    }
+
+    .card {
+        flex-basis: 450px;
     }
 }

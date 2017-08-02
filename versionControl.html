@@ -22,6 +22,75 @@
         Using Github logo</p>
         
     <div class="container">
+        <div class="card">
+            <h2>Git - Step by Step</h2>
+            <ol>
+                <li>Set a new repository in GitHub.</li>
+                <li>Create a folder for your project on your computer.</li>
+                <li>Run a <code>git init</code> command from the terminal in your project folder. <br />This initialises a new Git instance in the new directory by creating a (hidden) <strong>.git folder</strong>.</li>
+                <li>Create a <strong>.gitignore file</strong> in the project forlder and in it include any files you do not want included in git, ex. temporary files or .DS_Store in MacOS.</li>
+                <li>Run the command <code>git remote add origin [<em>url-of-github-project</em>]</code>. This connects your local git for your project with your online repository in GitHub.</li>
+                <li><code>git add [<em>name-of-file</em>]</code> : lets us add files to the <strong>Git's staging area</strong>. The changes will be tracked.</li>
+                <li><code>git commit -m "<em>your-message-here</em>"</code> : need to commit</li>
+                <li><code>git push -u origin master</code>This sets the upstream branch to master and pushes the changes in our local repository to the online repository on GitHub. Basically we are uploading the changes we did on our computer.</li>
+                <li>If you are working on a single remote repository, you do not need to use the full command again. From here on you can just use <code>git push</code> to push to GitHub. <em>You might need to enter your username and password when prompted</em>.</li>
+                <li>If we need to retrieve changes from GitHub we use the command <code>pull</code>. (Downloading)</li>
+                <li>If you mess something up when doing the remote add command, there are ways to fix it. 
+                    For example, when I created the repository for this project I mistyped the name. 
+                    Then when I did the remote add, obviously it was pointing to the mistyped name. 
+                    I renamed the repository on GitHub from the settings of the repository. 
+                    Now you will not be able to push as it will point to the wrong address. The follwoing two commands are very handy.
+                    <ul>
+                        <li><code>git remote -v</code>: This allows you to view what online repositories (their urls) are linked to your local project.</li>
+                        <li><code>gir remote rm origin</code>: Assuming that you named the alias origin. This will remove the link. You can verify that the link has been removed by using the previous command.</li>
+                    </ul>
+                </li>
+                <li>When working with git you might want to check the situation in git. Use <code>git status</code> for this purpose.</li>
+
+
+
+            </ol>
+        </div>
+        <div class="card">
+            <h2>Useful Terminal commands</h2>
+            <ul>
+                <li><code>ls</code> : list</li>
+                <li><code>ls -a</code> : list including hidden files</li>
+                <li><code>ls -la</code> : displays as a list with added details (and hidden files)</li>
+                <li><code>mkdir <em>name-of-folder</em></code> : creates a folder.</li>
+                <li><code>cd</code> : change directory.</li>
+                <li><code>cd ..</code> : move to the parent directory.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Initial Git setting-up</h2>
+            <ul>
+                <li>When you first set up git on your computer, you will need to use the following commands:</li>
+            </ul>
+            <ol>
+                <li><code>git config --global user.name "&lt<em>your-name</em>&gt"</code></li>
+                <li><code>git config --global user.email "&lt<em>your-email-address</em>&gt"</code></li>
+                <ul>
+                    <li>This will set <strong>Git’s global config</strong> for both your name and email.</li>
+                </ul>
+                <li>You can now do the initial commit:<br />
+                    <code>git commit -m "Initial commit"</code></li>
+            </ol>
+        </div>
+        <div class="card">
+            <h2>Some definitions</h2>
+            <ul>
+                <li><strong>Working directory</strong>: The directory where we initialised Git.</li>
+                <li><strong>Project files</strong>: All of the files contained within the working directory.</li>
+                <li><strong>Untracked files/changes</strong>: If we make changes to a file, or create a new file, those changes will be untracked.</li>
+                <li><strong>Tracked files</strong>: Files need to be <strong>added</strong> for the changes to be tracked and this will allow us to contribute to the project.</li>
+                <li><strong>Git's Staging Area</strong>: This were the changes are added to when we use the add command. These changes will then be considered tracked.</li>
+                <li><strong>commit</strong>: Once a file is staged, it can be commited. The commit command will commit all of the files in the staging area into the local repository.</li>
+            </ul>
+            <h2>Standard Git workflow</h2>
+            <strong><br />Make changes -> Add to Staging Area -> Commit to local repository</strong>
+        </div>
+        <div class="card"></div>
         <p>Currently Gathering the material I want to put here</p>
         <p>Version Control</p>
         <p>Created by Linus Torvalds (The Linux Guy)</p>
@@ -29,6 +98,7 @@
         <p>Other ways of using Git</p>
         <p>GitHub Desktop</p>
         <p>Visual Studio Code</p>
+        
     </div>
 
     
